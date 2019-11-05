@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "book";
+	src: url('../fonts/book.eot');
+	src: url('../fonts/book.eot?#iefix') format('eot'),
+	url('../fonts/book.woff2') format('woff2'),
+	url('../fonts/book.woff') format('woff'),
+	url('../fonts/book.ttf') format('truetype'),
+	url('../fonts/book.svg#book') format('svg');
+}
+
+@mixin ic-styles {
+	font-family: "book";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%ic {
+	@include ic-styles;
+}
+
+@function ic-char($filename) {
+	$char: "";
+
+	@if $filename == alert {
+	$char: "\"\\#{E001}\"";
+}
+	@if $filename == arrow {
+	$char: "\"\\#{E002}\"";
+}
+	@if $filename == logout {
+	$char: "\"\\#{E003}\"";
+}
+	@if $filename == pencil {
+	$char: "\"\\#{E004}\"";
+}
+	@if $filename == read {
+	$char: "\"\\#{E005}\"";
+}
+	@if $filename == searh {
+	$char: "\"\\#{E006}\"";
+}
+	@if $filename == selected {
+	$char: "\"\\#{E007}\"";
+}
+	@if $filename == star {
+	$char: "\"\\#{E008}\"";
+}
+
+@return unquote($char);
+}
+
+@mixin ic($filename, $insert: before, $extend: true) {
+	@if $extend {
+		@extend %ic;
+	}
+	&:#{$insert} {
+		@if not $extend {
+			@include ic-styles;
+		}
+		content: ic-char($filename);
+	}
+}
+
+.ic-alert {
+	@include ic(alert);
+}
+.ic-arrow {
+	@include ic(arrow);
+}
+.ic-logout {
+	@include ic(logout);
+}
+.ic-pencil {
+	@include ic(pencil);
+}
+.ic-read {
+	@include ic(read);
+}
+.ic-searh {
+	@include ic(searh);
+}
+.ic-selected {
+	@include ic(selected);
+}
+.ic-star {
+	@include ic(star);
+}

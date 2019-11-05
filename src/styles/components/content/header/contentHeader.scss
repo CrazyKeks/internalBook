@@ -1,0 +1,21 @@
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: 1260px){
+    flex-wrap: wrap;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc((100%  - 470px) - 30px);
+
+    @media screen and (max-width: 1260px){
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+  }
+}

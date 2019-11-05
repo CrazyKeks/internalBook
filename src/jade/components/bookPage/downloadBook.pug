@@ -1,0 +1,31 @@
+mixin downloadBook
+    +b.downloadBook
+        +e.titleAndTags
+            +e.title Думай и богатей
+            +e.wrapTags
+                +e.itemTag.notAvailable Бумага
+                +e.itemTag Аудио
+                +e.itemTag E-book
+        +e.author Наполеон Хилл 2017
+        +e.category Бизнес
+         |
+         span &nbsp;(Лайфхаки, развивалки)
+        +e.rowRaitingAndReview
+            +e.wrapRaiting
+                +e.wrapStars
+                    +e.star.ic-star.activeStar
+                    +e.star.ic-star
+                    +e.star.ic-star
+                    +e.star.ic-star
+                    +e.star.ic-star
+                +e.allRaiting 3 оценки
+            +e.wrapYourReview
+                +e.yourRaitingText Ваша оценка: 3/5
+                +e.BUTTON.btnReview написать отзыв
+        +e.rowDownload
+            +e.A.downloadBtn(href="#" download)
+                | FB12
+                span &nbsp;12mb
+            +e.A.downloadBtn(href="#" download)
+                | PDF
+                span &nbsp;120mb

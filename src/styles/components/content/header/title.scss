@@ -1,0 +1,22 @@
+.titleContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  &__titleText {
+    margin-top: -8px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #1A1A1A;
+    @include fontRubikMedium;
+    width: 100%;
+    margin-bottom: 15px;
+    word-break: break-all;
+  }
+  &__countBooks {
+    color: #808080;
+    font-size: 22px;
+    line-height: normal;
+    @include fontRubikMedium;
+    margin-right: 25px;
+  }
+}

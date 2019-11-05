@@ -1,0 +1,154 @@
+.downloadBook {
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 30px;
+
+  &__titleAndTags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 26px;
+    color: #1A1A1A;
+    @include fontRobotoMedium;
+    margin-right: 20px;
+  }
+
+  &__wrapTags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__itemTag {
+    background: #DEDEDE;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 10px;
+    color: #464646;
+    @include fontRobotoMedium;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.notAvailable {
+      background: #F7AAAA;
+      color: #9E0505;
+    }
+  }
+
+  &__author {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    @include fontRobotoRegular;
+    margin-bottom: 10px;
+  }
+
+  &__category {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+    @include fontRobotoMedium;
+
+    span {
+      font-size: 14px;
+      line-height: 20px;
+      color: #808080;
+      @include fontRobotoRegular;
+    }
+  }
+
+  &__rowRaitingAndReview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  &__wrapRaiting {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__wrapStars {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  &__star {
+    font-size: 20px;
+    color: #90CAF9;
+    margin-right: 2px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__allRaiting {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    @include fontRobotoRegular;
+    margin-right: 30px;
+  }
+
+  &__wrapYourReview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__yourRaitingText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    @include fontRobotoRegular;
+    margin-right: 10px;
+  }
+
+  &__btnReview {
+    outline: none;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64B5F6;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__rowDownload {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__downloadBtn {
+    border: 2px solid #64B5F6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64B5F6;
+    padding: 4px 15px;
+    @include fontRobotoMedium;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+
+    span {
+      color: #C4C4C4;
+    }
+  }
+}

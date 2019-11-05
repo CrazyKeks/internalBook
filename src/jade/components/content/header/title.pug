@@ -1,0 +1,7 @@
+include filter
+
+mixin title(titlePage, countPage)
+    +b.titleContent
+        +e.titleText= titlePage
+        +e.countBooks= countPage
+        +filter

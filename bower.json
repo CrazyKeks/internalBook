@@ -1,0 +1,13 @@
+{
+  "name": "2017",
+  "description": "Bower configuration",
+  "main": "",
+  "authors": [
+    "WorkSolutions"
+  ],
+  "license": "directory",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

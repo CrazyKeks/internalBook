@@ -1,0 +1,16 @@
+{
+  "projectName": "Prime Pride",
+  "pages": {
+    "homePage.html": "Главная страница",
+    "productsPage.html": "Главная продукции",
+    "clearingPage.html": "Страница 'рассчистка'",
+    "buildPage.html": "Страница 'строительство'",
+    "detailProduct.html": "Страница 'primetch'",
+    "listProductMeh.html": "Мульчеры механические",
+    "listProductGidrav.html": "Мульчеры гидравлические",
+    "listProductExcavator.html": "Мульчеры для экскаваторов",
+    "viewProductPage.html": "Детальная товаров (навесного)",
+    "detailTeches.html": "Детальная товаров (техники)",
+    "notFound.html": "404 страница"
+  }
+}

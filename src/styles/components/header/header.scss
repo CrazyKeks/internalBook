@@ -1,0 +1,47 @@
+.header {
+  max-width: 270px;
+  width: 100%;
+  padding: 15px 30px;
+  background: #f6f9fc;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 270px;
+    height: 100%;
+    width: 0.5px;
+    top: 0;
+    background: #D6D6D6;
+  }
+
+  @media screen and (max-width: 768px){
+    position: fixed;
+    left: -270px;
+    top: 0;
+    z-index: 10;
+    display: none;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.navigate {
+  &__title {
+    color: #C4C4C4;
+    @include fontRobotoRegular;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}

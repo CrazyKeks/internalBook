@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header"><a class="logo" href="/"><img class="logo__img" src="./i/svg/wsLibrary.svg" alt="" role="presentation" /></a>
+      <nav class="navigate">
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Закладки</a>
+            <div class="listMenu__icon count blue">3</div>
+          </li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читальный зал</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читаю</a>
+            <div class="listMenu__icon ic-alert"></div>
+          </li>
+        </ul>
+        <div class="navigate__title">Категории</div>
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Программирование</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Менеджмент</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Продажи</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Дизайн</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Художественная литература</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" role="main">
+      <div class="panel"><button class="burgerMenu">
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+        </button>
+        <div class="search"><input class="search__input" placeholder="Найти книгу (название, автор, содержание)" type="text" /><span class="search__icon ic-searh"></span></div>
+        <div class="userOptions"><button class="ic-logout logout blue"></button>
+          <div class="userWrap">
+            <div class="userWrap__userName">Джон Дой</div>
+            <div class="userWrap__userPhoto"><img class="userWrap__userPhotoImg" src="./i/images/avatar.jpg" alt="" role="presentation" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="container bookPage">
+        <div class="leftSide">
+          <div class="wrapImgBook"><img class="wrapImgBook__img" src="i/images/bookBg.jpg" alt="" role="presentation" /></div>
+          <div class="optionBook"><button class="optionBook__pencil ic-pencil"></button><button class="optionBook__read ic-read"></button><button class="optionBook__selected ic-selected"></button></div>
+          <div class="infoBook">
+            <div class="infoBook__wrapStatus">
+              <div class="infoBook__avatar"><img class="infoBook__imgAvatar" src="#" alt="" role="presentation" /></div>
+              <div class="infoBook__status">Книга свободна</div>
+            </div><button class="infoBook__interactionBook">Взять бумажную версию</button>
+          </div>
+        </div>
+        <div class="rightSide">
+          <div class="downloadBook">
+            <div class="downloadBook__titleAndTags">
+              <div class="downloadBook__title">Думай и богатей</div>
+              <div class="downloadBook__wrapTags">
+                <div class="downloadBook__itemTag notAvailable">Бумага</div>
+                <div class="downloadBook__itemTag">Аудио</div>
+                <div class="downloadBook__itemTag">E-book</div>
+              </div>
+            </div>
+            <div class="downloadBook__author">Наполеон Хилл 2017</div>
+            <div class="downloadBook__category">Бизнес<span>&nbsp;(Лайфхаки, развивалки)</span></div>
+            <div class="downloadBook__rowRaitingAndReview">
+              <div class="downloadBook__wrapRaiting">
+                <div class="downloadBook__wrapStars">
+                  <div class="downloadBook__star ic-star activeStar"></div>
+                  <div class="downloadBook__star ic-star"></div>
+                  <div class="downloadBook__star ic-star"></div>
+                  <div class="downloadBook__star ic-star"></div>
+                  <div class="downloadBook__star ic-star"></div>
+                </div>
+                <div class="downloadBook__allRaiting">3 оценки</div>
+              </div>
+              <div class="downloadBook__wrapYourReview">
+                <div class="downloadBook__yourRaitingText">Ваша оценка: 3/5</div><button class="downloadBook__btnReview">написать отзыв</button>
+              </div>
+            </div>
+            <div class="downloadBook__rowDownload"><a class="downloadBook__downloadBtn" href="#" download="download">FB12<span>&nbsp;12mb</span></a><a class="downloadBook__downloadBtn" href="#" download="download">PDF<span>&nbsp;120mb</span></a></div>
+          </div>
+          <div class="aboutBook">
+            <div class="aboutBook__title">Описание</div>
+            <div class="aboutBook__text">Овладейте современным передовым опытом разработки веб-приложений, взаимодействующих с базами данных, с помощью PHP 7 и MySQL 5.7! В этом новом 5-м издании книги, признанной наиболее ясным, удобным и практичным руководством по разработке с использованием PHP и MySQL, полностью отражены возможности последних версий PHP и MySQL. В первой части содержится ускоренный курс по PHP, в котором описано хранение/извлечение данных, массивы, строки, регулярные выражения, повторное использование кода, объекты и обработка ошибок исключений. Во второй части раскрывается проектирование, создание, доступ и программирование для баз данных MySQL. Третья часть посвящена безопасности веб-приложений; в ней добавлена новая информация по угрозам веб-безопасности, приведены инструкции по построению защищенных веб-приложений, а также рассмотрена реализация аутентификации в PHP и MySQL.</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/vendor2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

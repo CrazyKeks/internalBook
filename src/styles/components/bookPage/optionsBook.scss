@@ -1,0 +1,59 @@
+.optionBook {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__pencil {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: #C4C4C4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: 0.2s ease;
+    padding: 0;
+    &:hover {
+      color: #64B5F6;
+    }
+  }
+
+  &__read {
+    width: 20px;
+    height: 30px;
+    font-size: 30px;
+    color: #C4C4C4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: 0.2s ease;
+    padding: 0;
+    &:hover {
+      color: #64B5F6;
+    }
+  }
+
+  &__selected {
+    width: 20px;
+    height: 30px;
+    font-size: 30px;
+    color: #C4C4C4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: 0.2s ease;
+    padding: 0;
+    &:hover {
+      color: #64B5F6;
+    }
+  }
+}
+

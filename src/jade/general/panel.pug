@@ -1,0 +1,15 @@
+mixin panel
+    +b.panel
+        +b.BUTTON.burgerMenu
+            +e.item
+            +e.item
+            +e.item
+        +b.search
+            +e.INPUT.input(placeholder="Найти книгу (название, автор, содержание)")
+            +e.SPAN.icon.ic-searh
+        +b.userOptions
+            +b.BUTTON.ic-logout.logout.blue
+            +b.userWrap
+                +e.userName Джон Дой
+                +e.userPhoto
+                    +e.IMG.userPhotoImg(src="./i/images/avatar.jpg")

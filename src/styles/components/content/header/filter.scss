@@ -1,0 +1,22 @@
+.filterContent {
+  &__btn {
+    background: none;
+    border:none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    @include fontRobotoMedium;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+    transition: 0.2s ease;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: #64B5F6;
+    }
+  }
+}

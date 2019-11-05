@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header"><a class="logo" href="/"><img class="logo__img" src="./i/svg/wsLibrary.svg" alt="" role="presentation" /></a>
+      <nav class="navigate">
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Закладки</a>
+            <div class="listMenu__icon count blue">3</div>
+          </li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читальный зал</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читаю</a>
+            <div class="listMenu__icon ic-alert"></div>
+          </li>
+        </ul>
+        <div class="navigate__title">Категории</div>
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Программирование</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Менеджмент</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Продажи</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Дизайн</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Художественная литература</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" role="main">
+      <div class="panel"><button class="burgerMenu">
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+        </button>
+        <div class="search"><input class="search__input" placeholder="Найти книгу (название, автор, содержание)" type="text" /><span class="search__icon ic-searh"></span></div>
+        <div class="userOptions"><button class="ic-logout logout blue"></button>
+          <div class="userWrap">
+            <div class="userWrap__userName">Джон Дой</div>
+            <div class="userWrap__userPhoto"><img class="userWrap__userPhotoImg" src="./i/images/avatar.jpg" alt="" role="presentation" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="contentHeader">
+        <div class="contentHeader__wrap">
+          <div class="titleContent">
+            <div class="titleContent__titleText">Программирование</div>
+            <div class="titleContent__countBooks">42 книги</div>
+            <div class="filterContent"><button class="filterContent__btn">Релевантность</button><button class="filterContent__btn active">Рейтинг</button><button class="filterContent__btn">Дата добавления</button></div>
+          </div>
+        </div>
+        <div class="tagsHeader"><button class="tagsHeader__item">Все</button><button class="tagsHeader__item active">Бекенд</button><button class="tagsHeader__item">Фронтенд</button><button class="tagsHeader__item">Android</button><button class="tagsHeader__item">IOS</button><button class="tagsHeader__item">Angular</button><button class="tagsHeader__item">Swift</button><button class="tagsHeader__item">Java</button><button class="tagsHeader__item">React</button></div>
+      </div>
+      <div class="bookList">
+        <div class="bookList__item">
+          <div class="bookList__leftSide">
+            <div class="bookList__wrapImg"><img class="bookList__img" src="i/images/bookImg.jpg" alt="" role="presentation" /></div>
+            <div class="bookList__rowRaiting">
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star"></div>
+              <div class="bookList__star ic-star"></div>
+            </div>
+          </div>
+          <div class="bookList__rightSide"><a class="bookList__title" href="#">Изучаем PHP 7. Руководство по созданию интерактивных веб-сайтов.</a>
+            <div class="bookList__author">Давид Скляр</div>
+            <div class="bookList__category">Программирование</div>
+            <div class="bookList__wrapTags">
+              <div class="bookList__itemTags activeTag">Бумага</div>
+              <div class="bookList__itemTags">Аудио</div>
+              <div class="bookList__itemTags">E-book</div>
+            </div>
+          </div>
+          <div class="bookList__rowBtn"><a class="bookList__aboutLink" href="#">Подробнее</a><button class="bookList__btnRead ic-read activeRead"></button><button class="bookList__btnSelected ic-selected activeSelected"></button></div>
+        </div>
+        <div class="bookList__item">
+          <div class="bookList__leftSide">
+            <div class="bookList__wrapImg"><img class="bookList__img" src="i/images/bookImg.jpg" alt="" role="presentation" /></div>
+            <div class="bookList__rowRaiting">
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star"></div>
+              <div class="bookList__star ic-star"></div>
+            </div>
+          </div>
+          <div class="bookList__rightSide"><a class="bookList__title" href="#">Изучаем PHP 7. Руководство по созданию интерактивных веб-сайтов.</a>
+            <div class="bookList__author">Давид Скляр</div>
+            <div class="bookList__category">Программирование</div>
+            <div class="bookList__wrapTags">
+              <div class="bookList__itemTags activeTag">Бумага</div>
+              <div class="bookList__itemTags">Аудио</div>
+              <div class="bookList__itemTags">E-book</div>
+            </div>
+          </div>
+          <div class="bookList__rowBtn"><a class="bookList__aboutLink" href="#">Подробнее</a><button class="bookList__btnRead ic-read activeRead"></button><button class="bookList__btnSelected ic-selected activeSelected"></button></div>
+        </div>
+        <div class="bookList__item">
+          <div class="bookList__leftSide">
+            <div class="bookList__wrapImg"><img class="bookList__img" src="i/images/bookImg.jpg" alt="" role="presentation" /></div>
+            <div class="bookList__rowRaiting">
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star"></div>
+              <div class="bookList__star ic-star"></div>
+            </div>
+          </div>
+          <div class="bookList__rightSide"><a class="bookList__title" href="#">Изучаем PHP 7. Руководство по созданию интерактивных веб-сайтов.</a>
+            <div class="bookList__author">Давид Скляр</div>
+            <div class="bookList__category">Программирование</div>
+            <div class="bookList__wrapTags">
+              <div class="bookList__itemTags activeTag">Бумага</div>
+              <div class="bookList__itemTags">Аудио</div>
+              <div class="bookList__itemTags">E-book</div>
+            </div>
+          </div>
+          <div class="bookList__rowBtn"><a class="bookList__aboutLink" href="#">Подробнее</a><button class="bookList__btnRead ic-read activeRead"></button><button class="bookList__btnSelected ic-selected activeSelected"></button></div>
+        </div>
+        <div class="bookList__item">
+          <div class="bookList__leftSide">
+            <div class="bookList__wrapImg"><img class="bookList__img" src="i/images/bookImg.jpg" alt="" role="presentation" /></div>
+            <div class="bookList__rowRaiting">
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star activeStar"></div>
+              <div class="bookList__star ic-star"></div>
+              <div class="bookList__star ic-star"></div>
+            </div>
+          </div>
+          <div class="bookList__rightSide"><a class="bookList__title" href="#">Изучаем PHP 7. Руководство по созданию интерактивных веб-сайтов.</a>
+            <div class="bookList__author">Давид Скляр</div>
+            <div class="bookList__category">Программирование</div>
+            <div class="bookList__wrapTags">
+              <div class="bookList__itemTags activeTag">Бумага</div>
+              <div class="bookList__itemTags">Аудио</div>
+              <div class="bookList__itemTags">E-book</div>
+            </div>
+          </div>
+          <div class="bookList__rowBtn"><a class="bookList__aboutLink" href="#">Подробнее</a><button class="bookList__btnRead ic-read activeRead"></button><button class="bookList__btnSelected ic-selected activeSelected"></button></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

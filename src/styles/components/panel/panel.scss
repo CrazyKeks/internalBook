@@ -1,0 +1,14 @@
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0;
+  margin-bottom: 20px;
+  align-items: center;
+
+  @media screen and (max-width: 768px){
+    .search {
+      display: none;
+    }
+  }
+}

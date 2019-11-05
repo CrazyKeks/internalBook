@@ -1,0 +1,31 @@
+.tagsHeader {
+  max-width: 470px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+    border: none;
+    background: #DEDEDE;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464646;
+    transition: 0.2s ease;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    &:hover {
+      background: #90CAF9;
+      color: #fff;
+    }
+
+    &.active {
+      background: #90CAF9;
+      color: #fff;
+    }
+  }
+}

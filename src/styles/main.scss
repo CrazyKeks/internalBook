@@ -1,0 +1,39 @@
+@import "settings/fonts";
+@import "settings/var";
+@import "settings/reset";
+@import "settings/color";
+
+@import "plugins/slickSlider/slick";
+@import "plugins/slickSlider/slick-theme";
+
+@import "components/header/header";
+@import "components/header/listMenu";
+
+@import "components/title";
+@import "components/bookSlider";
+@import "components/blockCategoryBook";
+@import "components/backgroundPopup";
+
+@import "components/panel/panel";
+@import "components/panel/search";
+@import "components/panel/userBlock";
+@import "components/panel/logout";
+@import "components/panel/burgerMenu";
+
+@import "components/bookPage/aboutBook";
+@import "components/bookPage/image";
+@import "components/bookPage/infoBook";
+@import "components/bookPage/optionsBook";
+@import "components/bookPage/bookPage";
+@import "components/bookPage/downloadBook";
+
+@import "components/content/header/contentHeader";
+@import "components/content/header/title";
+@import "components/content/header/filter";
+@import "components/content/header/tags";
+
+@import "components/content/body/bookList";
+
+@import "pages/main";
+
+

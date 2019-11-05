@@ -1,0 +1,29 @@
+mixin header
+    +b.HEADER.header
+        +b.A.logo(href="/")
+            +e.img(src="./i/svg/wsLibrary.svg")
+        +b.NAV.navigate
+
+            +b.UL.listMenu
+                +e.LI.item
+                    +e.link(href="#") Закладки
+                    +e.icon.count.blue 3
+                +e.LI.item
+                    +e.link(href="#") Читальный зал
+                +e.LI.item
+                    +e.link(href="#") Читаю
+                    +e.icon.ic-alert
+
+            +e.title Категории
+
+            +b.UL.listMenu
+                +e.LI.item
+                    +e.link(href="#") Программирование
+                +e.LI.item
+                    +e.link(href="#") Менеджмент
+                +e.LI.item
+                    +e.link(href="#") Продажи
+                +e.LI.item
+                    +e.link(href="#") Дизайн
+                +e.LI.item
+                    +e.link(href="#") Художественная литература
