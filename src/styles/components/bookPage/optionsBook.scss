@@ -10,7 +10,7 @@
 
   &__pencil {
     width: 30px;
-    height: 30px;
+    height: 28px;
     font-size: 30px;
     color: #C4C4C4;
     border: none;
@@ -26,7 +26,7 @@
 
   &__read {
     width: 20px;
-    height: 30px;
+    height: 28px;
     font-size: 30px;
     color: #C4C4C4;
     border: none;
@@ -35,14 +35,19 @@
     background: none;
     transition: 0.2s ease;
     padding: 0;
+    background: url(../i/icons/read.svg) no-repeat;
+    background-size: cover;
+
     &:hover {
+      background: url(../i/icons/read-g.svg) no-repeat;
+      background-size: cover;
       color: #64B5F6;
     }
   }
 
   &__selected {
     width: 20px;
-    height: 30px;
+    height: 28px;
     font-size: 30px;
     color: #C4C4C4;
     border: none;
@@ -51,7 +56,12 @@
     background: none;
     transition: 0.2s ease;
     padding: 0;
+    background: url(../i/icons/selected.svg) no-repeat;
+    background-size: cover;
+
     &:hover {
+      background: url(../i/icons/selected-g.svg) no-repeat;
+      background-size: cover;
       color: #64B5F6;
     }
   }

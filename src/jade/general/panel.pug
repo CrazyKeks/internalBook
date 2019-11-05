@@ -6,10 +6,10 @@ mixin panel
             +e.item
         +b.search
             +e.INPUT.input(placeholder="Найти книгу (название, автор, содержание)")
-            +e.SPAN.icon.ic-searh
+            +e.SPAN.icon
         +b.userOptions
             +b.BUTTON.ic-logout.logout.blue
-            +b.userWrap
+            +b.A.userWrap(href="#")
                 +e.userName Джон Дой
                 +e.userPhoto
                     +e.IMG.userPhotoImg(src="./i/images/avatar.jpg")
