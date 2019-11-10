@@ -40,17 +40,23 @@
 	@if $filename == pencil {
 	$char: "\"\\#{E004}\"";
 }
-	@if $filename == read {
+	@if $filename == read-g {
 	$char: "\"\\#{E005}\"";
 }
-	@if $filename == searh {
+	@if $filename == read {
 	$char: "\"\\#{E006}\"";
 }
-	@if $filename == selected {
+	@if $filename == searh {
 	$char: "\"\\#{E007}\"";
 }
-	@if $filename == star {
+	@if $filename == selected-g {
 	$char: "\"\\#{E008}\"";
+}
+	@if $filename == selected {
+	$char: "\"\\#{E009}\"";
+}
+	@if $filename == star {
+	$char: "\"\\#{E00A}\"";
 }
 
 @return unquote($char);
@@ -80,11 +86,17 @@
 .ic-pencil {
 	@include ic(pencil);
 }
+.ic-read-g {
+	@include ic(read-g);
+}
 .ic-read {
 	@include ic(read);
 }
 .ic-searh {
 	@include ic(searh);
+}
+.ic-selected-g {
+	@include ic(selected-g);
 }
 .ic-selected {
 	@include ic(selected);

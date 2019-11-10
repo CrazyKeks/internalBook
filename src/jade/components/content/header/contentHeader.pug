@@ -1,8 +1,9 @@
 include title
 include tags
 
-mixin contentHeader(sectionName, countPage)
+mixin contentHeader(sectionName, countPage, filter, tags)
     +b.contentHeader
         +e.wrap
-            +title(sectionName, countPage)
-        +tags
+            +title(sectionName, countPage, filter)
+        if tags == true
+            +tags

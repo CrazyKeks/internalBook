@@ -1,0 +1,141 @@
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    max-width: calc((100% / 4) - 25px);
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 30px;
+
+    &:nth-of-type(4n + 4) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 1800px){
+      max-width: calc((100% / 3) - 30px);
+
+      &:nth-of-type(3n + 3) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(4n + 4) {
+        margin-right: 30px;
+      }
+    }
+
+    @media screen and (max-width: 1400px){
+      max-width: calc((100% / 2) - 30px);
+
+      &:nth-of-type(3n + 3) {
+        margin-right: 30px;
+      }
+
+      &:nth-of-type(4n + 4) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n + 2) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 1060px){
+      max-width: 100%;
+      margin-right: 0;
+
+      &:nth-of-type(3n + 3) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(4n + 4) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(2n + 2) {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  &__wrapUserInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__wrapAvatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  &__avatarImg {
+    width: 100%;
+    height: auto;
+  }
+
+  &__wrapName {
+    span {
+      display: block;
+      width: 100%;
+      @include fontRobotoRegular;
+      font-size: 14px;
+      line-height: 20px;
+      color: #1A1A1A;
+    }
+  }
+
+  &__wrapUserStatus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__wrapStatus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__statusName {
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    @include fontRobotoRegular;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &__statusCount {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #1A1A1A;
+    @include fontRobotoRegular;
+  }
+
+  &__linkAbout {
+    font-size: 14px;
+    line-height: 20px;
+    color: #64B5F6;
+    @include fontRobotoRegular;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}

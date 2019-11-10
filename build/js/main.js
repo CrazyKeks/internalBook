@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  booksLiderInit();
+
   function booksLiderInit() {
     var item = $('.bookSlider__item');
     var itemWidth = $(item[0]).width();
@@ -18,8 +20,6 @@ $(document).ready(function () {
 
   }
 
-  booksLiderInit();
-
   $('.burgerMenu').on('click', function () {
     $(this).toggleClass('active');
 
@@ -36,6 +36,16 @@ $(document).ready(function () {
       }, 200)
       bgPopup(false);
     }
+  });
+
+
+  $(document).on('click','.backgroundPopup', function () {
+    bgPopup(false);
+    $('.burgerMenu').removeClass('active');
+    $('.header').css('left', '-270px');
+    setTimeout(function () {
+      $('.header').css('display', 'none');
+    }, 200);
   });
 
   function bgPopup(status) {

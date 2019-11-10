@@ -1,0 +1,43 @@
+mixin listBook(title, empty)
+    +b.listBook
+        +e.SPAN.title= title
+        if !empty
+            +e.UL.list
+                +e.LI.item
+                    +e.A.link(href="#")
+                        +e.wrapImg
+                            +e.IMG.imgBook(src="i/images/bookImg.jpg")
+                        +e.wrapText
+                            +e.SPAN.titleBook Изучаем PHP 7. Руководство по созданию бла-бла
+                            +e.SPAN.authorBook Дэн Браун
+                +e.LI.item
+                    +e.A.link(href="#")
+                        +e.wrapImg
+                            +e.IMG.imgBook(src="i/images/bookImg.jpg")
+                        +e.wrapText
+                            +e.SPAN.titleBook Изучаем PHP 7. Руководство по созданию бла-бла
+                            +e.SPAN.authorBook Дэн Браун
+                +e.LI.item
+                    +e.A.link(href="#")
+                        +e.wrapImg
+                            +e.IMG.imgBook(src="i/images/bookImg.jpg")
+                        +e.wrapText
+                            +e.SPAN.titleBook Изучаем PHP 7. Руководство по созданию бла-бла
+                            +e.SPAN.authorBook Дэн Браун
+                +e.LI.item
+                    +e.A.link(href="#")
+                        +e.wrapImg
+                            +e.IMG.imgBook(src="i/images/bookImg.jpg")
+                        +e.wrapText
+                            +e.SPAN.titleBook Изучаем PHP 7. Руководство по созданию бла-бла
+                            +e.SPAN.authorBook Дэн Браун
+                +e.LI.item
+                    +e.A.link(href="#")
+                        +e.wrapImg
+                            +e.IMG.imgBook(src="i/images/bookImg.jpg")
+                        +e.wrapText
+                            +e.SPAN.titleBook Изучаем PHP 7. Руководство по созданию бла-бла
+                            +e.SPAN.authorBook Дэн Браун
+        else
+            +e.emptyTitle Список пуст :(
+

@@ -1,0 +1,28 @@
+.wrapUserBooksInfo {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .listBook:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 1400px){
+    & .listBook:nth-of-type(3n + 3) {
+      margin-right: 30px;
+    }
+
+    & .listBook:nth-of-type(2n + 2) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    & .listBook:nth-of-type(3n + 3) {
+      margin-right: 0;
+    }
+
+    & .listBook:nth-of-type(2n + 2) {
+      margin-right: 0;
+    }
+  }
+}

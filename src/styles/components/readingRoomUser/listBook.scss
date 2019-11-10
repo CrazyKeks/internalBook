@@ -1,0 +1,94 @@
+.listBook {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  max-width: calc((100% / 3) - 30px);
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 255px;
+
+  @media screen and (max-width: 1400px){
+    max-width: calc((100% / 2) - 30px);
+  }
+
+  @media screen and (max-width: 1200px){
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 32px;
+    color: #1A1A1A;
+    @include fontRubikRegular;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    background: #F5F5F5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__wrapImg {
+    width: 22px;
+    min-width: 22px;
+    height: 100%;
+    margin-right: 15px;
+  }
+
+  &__imgBook {
+    width: 100%;
+    height: auto;
+  }
+
+  &__wrapText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__titleBook {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+    @include fontRobotoRegular;
+    margin-bottom: 1px;
+    display: block;
+  }
+
+  &__authorBook {
+    font-size: 10px;
+    line-height: 12px;
+    color: #808080;
+    @include fontRobotoMedium;
+  }
+
+  &__emptyTitle {
+    font-size: 22px;
+    line-height: 32px;
+    color: #DEDEDE;
+    @include fontRubikRegular;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+}

@@ -1,7 +1,8 @@
 include filter
 
-mixin title(titlePage, countPage)
+mixin title(titlePage, countPage, filter)
     +b.titleContent
         +e.titleText= titlePage
         +e.countBooks= countPage
-        +filter
+        if filter == true
+            +filter

@@ -87,10 +87,14 @@
 
   &__star {
     font-size: 20px;
-    color: #90CAF9;
     margin-right: 2px;
+    color: #DEDEDE;;
     &:last-child {
       margin-right: 0;
+    }
+
+    &.activeStar {
+      color: #90CAF9;
     }
   }
 
