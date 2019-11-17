@@ -9,10 +9,13 @@ html(lang='ru')
 
         +b.MAIN.main
             +panel
+            +avtarRow
             +b.wrapUserBooksInfo
                 +listBook('Прочитанные книги', false)
                 +listBook('Избранное', false)
                 +listBook('Книги на руках', true)
+            +contentHeader('Отзывы пользователя', '2 отзыва', false, false)
+            +reviewsList
         script(src="js/vendor.min.js")
         script(src="js/vendor2.min.js")
         script(src="js/main.js")

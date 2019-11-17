@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header"><a class="logo" href="/"><img class="logo__img" src="./i/svg/wsLibrary.svg" alt="" role="presentation" /></a>
+      <nav class="navigate">
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Закладки</a>
+            <div class="listMenu__icon count blue">3</div>
+          </li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читальный зал</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Читаю</a>
+            <div class="listMenu__icon ic-alert"></div>
+          </li>
+        </ul>
+        <div class="navigate__title">Категории</div>
+        <ul class="listMenu">
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Программирование</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Менеджмент</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Продажи</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Дизайн</a></li>
+          <li class="listMenu__item"><a class="listMenu__link" href="#">Художественная литература</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" role="main">
+      <div class="panel"><button class="burgerMenu">
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+          <div class="burgerMenu__item"></div>
+        </button>
+        <div class="search"><input class="search__input" placeholder="Найти книгу (название, автор, содержание)" type="text" /><span class="search__icon"></span></div>
+        <div class="userOptions"><button class="ic-logout logout blue"></button><a class="userWrap" href="#"><span class="userWrap__userName">Джон Дой</span><span class="userWrap__userPhoto"><img class="userWrap__userPhotoImg" src="./i/images/avatar.jpg" alt="" role="presentation"/></span></a></div>
+      </div>
+      <div class="titleContent">
+        <div class="titleContent__titleText">Редактировать профиль</div>
+      </div>
+      <div class="userEditPage">
+        <form class="userEditPage__form">
+          <div class="userEditPage__wrapAvatar"></div>
+          <div class="userEditPage__wrapUserInfo"><span class="userEditPage__title">Личные данные</span>
+            <div class="wrapInput otherValidate"><label class="wrapInput__label">Имя</label><input class="wrapInput__input" placeholder="Ваше имя" type="text" /></div>
+            <div class="wrapInput otherValidate"><label class="wrapInput__label">Фамилия</label><input class="wrapInput__input" placeholder="Ваша фамилия" type="text" /></div>
+            <div class="wrapInput otherValidate"><label class="wrapInput__label">Отчество</label><input class="wrapInput__input" placeholder="Ваше отчетсво" type="text" /></div>
+            <div class="wrapInput emailValidate"><label class="wrapInput__label">Ваш e-mail</label><input class="wrapInput__input" placeholder="E-mail" type="text" /></div>
+          </div>
+          <div class="userEditPage__wrapUserInfo"><span class="userEditPage__title">Сменить пароль</span>
+            <div class="wrapInput newPassword"><label class="wrapInput__label">Новый пароль</label><input class="wrapInput__input" placeholder="Введите пароль" type="password" /></div>
+            <div class="wrapInput newPasswordCheck"><label class="wrapInput__label">Повторите пароль</label><input class="wrapInput__input" placeholder="Повторите пароль" type="password" /></div>
+          </div><button class="userEditPage__btnSave">Сохранить изменения</button><button class="userEditPage__btnCansel">Отменить</button>
+        </form>
+      </div>
+    </main>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/vendor2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.userEditPage {
+
+  &__title {
+    font-size: 22px;
+    line-height: 32px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+    display: block;
+    @include fontRobotoRegular;
+  }
+
+  &__wrapUserInfo {
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    max-width: 400px;
+
+    .wrapInput {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btnSave {
+    display: inline-block;
+    color: #64B5F6;
+    font-size: 14px;
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__btnCansel {
+    display: inline-block;
+    color: #808080;
+    font-size: 14px;
+    border: none;
+    background: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

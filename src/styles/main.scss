@@ -38,6 +38,13 @@
 
 @import "components/readingRoomUser/listBook";
 @import "components/readingRoomUser/wrapUserBooksInfo";
+@import "components/readingRoomUser/rowUserAvatar";
+@import "components/readingRoomUser/reviewsList";
+
+@import "components/formComponents/defInput";
+@import "components/formComponents/errorValidate";
+
+@import "components/userEditPage/userEditPageForm";
 
 @import "pages/main";
 

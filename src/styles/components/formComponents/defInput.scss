@@ -1,0 +1,33 @@
+.wrapInput {
+  position: relative;
+
+  &__label {
+    color: #808080;
+    font-size: 14px;
+    line-height: 20px;
+    @include fontRobotoRegular;
+    margin-bottom: 5px;
+    display: block;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__input {
+    background: #F5F5F5;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #1A1A1A;
+    height: 40px;
+    line-height: 40px;
+    @include fontRobotoRegular;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 0.3s ease-in-out;
+
+    &::placeholder {
+      color: #808080;
+    }
+  }
+}

@@ -22,7 +22,7 @@
       width: calc(100% + 30px + 15px);
       border-top-left-radius: 50px;
       border-bottom-left-radius: 50px;
-      background: #90CAF9;
+      background: #BBDEFB;
       height: 30px;
       transform: translateY(-50%);
       opacity: 0;
@@ -34,6 +34,13 @@
       }
       .listMenu__link {
         color: #fff;
+      }
+    }
+
+    &.selectedItem {
+      &:before {
+        background: #90CAF9;
+        opacity: 1;
       }
     }
   }

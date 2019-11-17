@@ -1,0 +1,35 @@
+.avatarRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  align-items: center;
+
+  &__wrapAvatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__wrapName {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 43px;
+    color: #1A1A1A;
+    @include fontRobotoMedium;
+    width: 100%;
+  }
+}

@@ -3,6 +3,7 @@ include filter
 mixin title(titlePage, countPage, filter)
     +b.titleContent
         +e.titleText= titlePage
-        +e.countBooks= countPage
+        if countPage == ''
+            +e.countBooks= countPage
         if filter == true
             +filter

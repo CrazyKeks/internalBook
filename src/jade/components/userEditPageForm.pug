@@ -1,0 +1,18 @@
+include formComponents/defInput
+
+mixin userEditPageForm
+    +b.userEditPage
+        +e.FORM.form
+            +e.wrapAvatar
+            +e.wrapUserInfo
+                +e.SPAN.title Личные данные
+                +defInput("Имя", "Ваше имя", "otherValidate")
+                +defInput("Фамилия", "Ваша фамилия", "otherValidate")
+                +defInput("Отчество", "Ваше отчетсво", "otherValidate")
+                +defInput("Ваш e-mail", "E-mail", "emailValidate")
+            +e.wrapUserInfo
+                +e.SPAN.title Сменить пароль
+                +defInput("Новый пароль", "Введите пароль", "newPassword", 'password')
+                +defInput("Повторите пароль", "Повторите пароль", "newPasswordCheck", 'password')
+            +e.BUTTON.btnSave Сохранить изменения
+            +e.BUTTON.btnCansel Отменить

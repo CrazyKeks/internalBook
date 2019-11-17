@@ -1,0 +1,13 @@
+.errorValidate {
+  label {
+    color: #F7AAAA;
+  }
+
+  input {
+    border-color: #F7AAAA;
+
+    &::placeholder {
+      color: #F7AAAA;
+    }
+  }
+}

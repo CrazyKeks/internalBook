@@ -1,6 +1,7 @@
 .wrapUserBooksInfo {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 
   & .listBook:nth-of-type(3n + 3) {
     margin-right: 0;

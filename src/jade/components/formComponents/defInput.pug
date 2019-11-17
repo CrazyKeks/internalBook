@@ -1,0 +1,4 @@
+mixin defInput(label,placeholder,additionalClass, type)
+    +b.wrapInput(class=additionalClass)
+        +e.LABEL.label= label
+        +e.INPUT.input(placeholder=placeholder, type=type)
