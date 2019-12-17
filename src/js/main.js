@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   booksLiderInit();
+  reviewsListWIdthCalc();
 
   function booksLiderInit() {
     var item = $('.bookSlider__item');
@@ -125,4 +126,25 @@ $(document).ready(function () {
     }
   }
 
+  function reviewsListWIdthCalc() {
+    var container = $('.reviewsList');
+    var containerWidth = container.width();
+    var countCard = 1;
+    if ($(window).width() > 1200) {
+      countCard = 3;
+    }
+    if($(window).width() < 1200 && $(window).width() > 768) {
+      countCard = 2;
+    }
+    var widthItem = (containerWidth / countCard) - 30;
+    container.removeAttr('style');
+    container.attr('style', 'column-width:' + widthItem + 'px;');
+  }
+
+
+});
+
+
+$(document).resize(function () {
+  reviewsListWIdthCalc();
 });

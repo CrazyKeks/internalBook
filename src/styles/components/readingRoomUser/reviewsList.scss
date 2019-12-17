@@ -1,29 +1,16 @@
 .reviewsList {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-  height: 700px;
-
-  &:before,
-  &:after {
-    content: "";
-    flex-basis: 100%;
-    width: 0;
-    order: 2;
-  }
+  column-width: 200px;
+  column-gap: 30px;
 
   &__item {
+    display: inline-block;
     background: #FFFFFF;
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 20px;
-    width: 32%;
     margin-bottom: 30px;
     box-sizing: border-box;
-
-    &:nth-child(3n+1) { order: 1; }
-    &:nth-child(3n+2) { order: 2; }
-    &:nth-child(3n)   { order: 3; }
+    column-break-inside: avoid;
   }
 
   &__wrapInfoBook {

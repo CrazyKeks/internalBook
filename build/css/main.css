@@ -513,17 +513,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
 .avatarRow__text { font-size: 36px; line-height: 43px; color: #1A1A1A; font-family: 'Roboto-Medium'; font-weight: 500; font-style: normal; width: 100%; }
 
-.reviewsList { display: -ms-flexbox; display: flex; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-line-pack: justify; align-content: space-between; height: 700px; }
+.reviewsList { -webkit-column-width: 200px; column-width: 200px; -webkit-column-gap: 30px; column-gap: 30px; }
 
-.reviewsList:before, .reviewsList:after { content: ""; -ms-flex-preferred-size: 100%; flex-basis: 100%; width: 0; -ms-flex-order: 2; order: 2; }
-
-.reviewsList__item { background: #FFFFFF; box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06); border-radius: 8px; padding: 20px; width: 32%; margin-bottom: 30px; box-sizing: border-box; }
-
-.reviewsList__item:nth-child(3n+1) { -ms-flex-order: 1; order: 1; }
-
-.reviewsList__item:nth-child(3n+2) { -ms-flex-order: 2; order: 2; }
-
-.reviewsList__item:nth-child(3n) { -ms-flex-order: 3; order: 3; }
+.reviewsList__item { display: inline-block; background: #FFFFFF; box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.06); border-radius: 8px; padding: 20px; margin-bottom: 30px; box-sizing: border-box; column-break-inside: avoid; }
 
 .reviewsList__wrapInfoBook { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; margin-bottom: 10px; }
 
