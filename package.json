@@ -19,6 +19,6 @@
   "dependencies": {
     "bower": "^1.8.4",
     "gulp": "^3.9.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
